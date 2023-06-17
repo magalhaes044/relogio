@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Relógio Avançado</title>
+  <link rel="stylesheet" href="mod.css">
+</head>
+<body>
+  <div class="clock-container">
+    <div class="clock">
+      <div class="time"></div>
+      <div class="date"></div>
+      <div class="weather">
+        <div class="temperature"></div>
+        <div class="description"></div>
+        <div class="humidity"></div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="button">Alternar Modo</button>
+      <label for="timezone">Fuso Horário:</label>
+      <select class="timezone" id="timezone">
+        <option value="America/Sao_Paulo">Brasília</option>
+        <option value="America/New_York">Nova York</option>
+        <option value="Europe/London">Londres</option>
+        <option value="Asia/Tokyo">Tóquio</option>
+      </select>
+      <label for="show-date">Mostrar Data:</label>
+      <input type="checkbox" class="show-date" id="show-date">
+    </div>
+  </div>
+
+  <script src="mod.js"></script>
+</body>
+</html>

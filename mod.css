@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .time {
+    font-size: 72px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .date {
+    font-size: 24px;
+    text-align: center;
+    display: none;
+  }
+  
+  .weather {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .temperature {
+    margin-bottom: 5px;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .button {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-right: 10px;
+  }
+  
+  .timezone {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  label {
+    font-size: 16px;
+  }
+  
+  .show-date {
+    margin-left: 5px;
+  }
+  
+  .analog-clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #000;
+  }
+  
+  .hour-hand,
+  .minute-hand,
+  .second-hand {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: bottom center;
+  }
+  
+  .hour-hand {
+    width: 6px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  .minute-hand {
+    width: 4px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  .second-hand {
+    width: 2px;
+    height: 90px;
+    background-color: #f00;
+  }
+  
